@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+}
+body {
+    line-height: 1;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    /* inline-block -> 항상 밑에 여백이 있다. */
+    display: block;
+    /* or */
+    /* dib & vat */
+}
