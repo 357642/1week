@@ -1,0 +1,63 @@
+body{
+    background: #ccc;
+}
+header{
+    height: 100px;
+    background: #000;
+}
+main{
+    width: 800px;
+    margin: 10px auto;
+}
+main > div{
+    margin-bottom: 10px;
+}
+.box1{
+    height: 200px;
+    background: #fff;
+}
+.box2{
+    overflow: hidden;
+}
+.box2 div{
+    float: left;
+    width: calc((100% - 20px)/3);
+    height: 100px;
+    margin-right: 10px;
+    background: #fff;
+}
+.box2 div:last-child{
+    margin-right: 0;
+}
+.box3{}
+.box3 .child{
+    float: left;
+    width: calc((100% - 40px)/5);
+    height: 100px;
+    margin-right: 10px;
+    background: #fff;
+}
+.box3 .child.last{
+    margin-right: 0;
+}
+.box3 .clear{
+    clear: both;
+}
+.box4{
+    padding: 10px;
+    background: #f00;
+}
+.box4::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.box4 div{
+    float: left;
+    width: calc(50% - 5px);
+    height: 100px;
+    background: #fff;
+}
+.box4 div:last-child{
+    float: right;
+}

@@ -1,0 +1,62 @@
+body{
+    background: #ccc;
+}
+header{
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f00;
+}
+main{
+    margin: 10px 10px 10px 160px;
+}
+main > div{
+    margin-bottom: 10px;
+}
+.box1,
+.box3,
+.box4,
+.box7{
+    height: 200px;
+    background: #fff;
+}
+.box2{
+    overflow: hidden;
+}
+.box2 div{
+    width: calc(50% - 5px);
+    height: 100px;
+    float: left;
+    background: #fff;
+}
+.box2 div:last-child{
+    float: right;
+}
+.box5{
+    overflow: hidden;
+}
+.box5 div{
+    width: calc(80% - 5px);
+    height: 100px;
+    float: left;
+    background: #fff;                
+}
+.box5 div:last-child{
+    width: calc(20% - 5px);
+    float: right;
+}
+.box6{
+    overflow: hidden;
+}
+.box6 div{
+    width: calc(30% - 5px);
+    height: 100px;
+    float: left; 
+    background: #fff;   
+}
+.box6 div:last-child{
+    width: calc(70% - 5px);
+    float: right;
+}

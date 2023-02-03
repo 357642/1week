@@ -1,0 +1,139 @@
+/* 
+    por - 기준점
+    poa - 기준점 내에서 절대 위치
+*/
+header {
+    position: relative;
+    height: 200px;
+    background: #ccc;
+}
+header h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 50px;
+    background: #f00;
+
+    /* 일일이 계산. 수치 모르면 계산 불가. 옛날 방법 */
+    /* margin-left: -50px;
+    margin-top: -25px; */
+}
+header h1 a {
+    display: block;
+    height: 100%;
+}
+
+
+header .sns {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* float: left; */
+}
+header .login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* float: right; */
+}
+
+
+.box1 {
+    position: relative;
+    height: 300px;
+    background: #888;
+}
+.box1 .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: #fff;
+}
+.box1 .btn.prev {
+    left: 10px;
+}
+.box1 .btn.next {
+    right: 10px;
+}
+/* 
+    이유2
+    1. 점수를 올릴 수 있음.
+    2. 중복 방지
+*/
+.box1 .pagination {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+/* *****중요!***** */
+.box1 .pagination span {
+    float: left;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+}
+.box1 .pagination .on {
+    background: #f00;
+}
+
+
+.box2 {
+    padding: 100px 0;
+}
+.box2 h2 {
+    margin-bottom: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+.box2 .wrap {
+    margin: 0 auto;
+    width: 800px;
+}
+.box2 ul {
+    overflow: hidden;
+    margin-right: -10px;
+}
+.box2 ul li {
+    float: left;
+    width: 33.33%;
+}
+.box2 ul a {
+    display: block;
+    margin-right: 10px;
+    padding: 10px;
+    background: #f00;
+}
+.box2 ul img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.box2 ul p {
+    margin-top: 10px;
+    padding: 10px;
+    background: #fff;
+}
+
+
+.box3 {
+    padding: 100px 0;
+    background: #ccc;
+}
+.box3 ul {
+    margin: 0 auto;
+    width: 800px;
+}
+.box3 ul li {
+    height: 100px;
+    background: #fff;
+}
+.box3 ul li+li {
+    margin-top: 10px;
+}

@@ -1,0 +1,113 @@
+header .box1 {
+    position: relative;
+    height: 200px;
+    background: #ccc;
+}
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header h1 a {
+    display: block;
+    width: 100px;
+    height: 50px;
+    background: #f00;
+}
+header .sns {
+    float: left;
+}
+header .login {
+    float: right;
+}
+.gnb {
+    text-align: center;
+    background: #888;
+}
+.gnb ul {
+    /* 얘가 중앙 가야함 */
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 50px;
+    background: #f00;
+}
+.gnb ul li {
+    /* 이미 왼쪽 정렬 썼음. 고로 중앙으로 못 감 */
+    float: left;
+    padding: 0 20px;
+}
+
+
+main {
+    margin: 10px auto;
+    width: 800px;
+}
+.box2 {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #ccc;
+}
+.box2 .top {
+    margin-bottom: 10px;
+    height: 100px;
+    background: #fff;
+}
+.box2 .bottom {
+    overflow: hidden;
+    padding: 10px;
+    background: #fff;
+}
+.box2 .left {
+    float: left;
+    width: calc(100% - 160px);
+    background: #00f;
+}
+.box2 .left ul {}
+.box2 .left li {
+    float: left;
+    margin-right: 10px;
+    width: calc((100% - 20px)/3);
+    height: 100px;
+    background: #f00;
+}
+.box2 .left li:nth-child(3n) {
+    margin-right: 0;
+}
+.box2 .left li:nth-child(n+4) {
+    margin-top: 10px;
+}
+/* .box2 .left li:nth-child(-n+3) {} */
+.box2 .right {
+    float: right;
+    width: 150px;
+    height: 210px;
+    background: #f00;
+}
+
+
+.box3 {
+    padding: 10px;
+    background: #ccc;
+}
+.box3 ul {}
+.box3 ul li {}
+.box3 ul li+li {
+    margin-top: 10px;
+}
+.box3 ul a {
+    overflow: hidden;
+    display: block;
+}
+.box3 ul img {
+    float: left;
+    margin-right: 10px;
+    width: 150px;
+    height: 150px;
+}
+.box3 ul p {
+    overflow: hidden;
+    height: 150px;  
+    background: #fff;
+}

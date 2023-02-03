@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #ccc;
+}
+header {
+    height: 100px;
+    background: #000;
+}
+main {
+    margin: 10px auto;
+    width: 800px;
+}
+main > div {
+    margin-bottom: 10px;
+}
+.box1 {
+    height: 200px;
+    background: #fff;
+}
+/* float 해제법(1) - overflow:hidden  */
+.box2 {
+    overflow: hidden;
+}
+.box2 div {
+    float: left;
+    margin-right: 10px;
+    width: calc((100% - 20px)/3);
+    height: 100px;
+    background: #fff;
+}
+.box2 div:last-child {
+    margin-right: 0;
+}
+/* float 해제법(2) - clear:both */
+/* 태그를 만들어놔야 함... */
+.box3 {}
+.box3 .child {
+    float: left;
+    margin-right: 10px;
+    width: calc((100% - 40px)/5);
+    height: 100px;
+    background: #fff;
+}
+.box3 .child.last {
+    margin-right: 0;
+}
+.box3 .clear {
+    clear: both;
+}
+/* float 해제법(3) - after: clear:both 가상요소*/
+.box4 {
+    padding: 10px;
+    background: #f00;
+}
+.box4::after {
+    /* inline */
+    content: '';
+    display: block;
+    clear: both;
+}
+.box4 div {
+    float: left;
+    width: calc(50% - 5px);
+    height: 100px;
+    background: #fff;   
+}
+.box4 div:last-child {
+    float: right;
+}

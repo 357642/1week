@@ -1,0 +1,112 @@
+header{}
+header .box1{
+    height: 200px;
+    position: relative;
+    background: #ccc;
+}
+header h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header h1 a{
+    display: block;
+    width: 100px;
+    height: 50px;
+    background: #f00;
+}
+header .sns{
+    float: left;
+}
+header .login{
+    float: right;
+}
+.gnb{
+    text-align: center;
+    background: #888;
+}
+.gnb ul{
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 50px;
+    background: #f00;
+}
+.gnb li{
+    float: left;
+    padding: 0 20px;
+}
+.gnb a{}
+main{
+    width: 800px;
+    margin: 10px auto;
+}
+.box2{
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #ccc;
+}
+.box2 .top{
+    height: 100px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.box2 .bottom{
+    padding: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+.box2 .left{
+    float: left;
+    width: calc(100% - 160px);
+    background: #00f;
+}
+.box2 .left ul{}
+.box2 .left li{
+    float: left;
+    width: calc((100% - 20px)/3);
+    height: 100px;
+    margin-right: 10px;
+    background: #f00;
+}
+.box2 .left li:nth-child(3n){
+    margin-right: 0;
+}
+.box2 .left li:nth-child(n+4){
+    margin-top: 10px;
+}
+.box2 .right{
+    float: right;
+    width: 150px;
+    height: 210px;
+    background: #f00;
+}
+.box3{
+    padding: 10px;
+    background: #ccc;
+}
+.box3 ul{}
+.box3 li{}
+.box3 li+li{
+    margin-top: 10px;
+}
+.box3 a{
+    display: block;
+    overflow: hidden;
+}
+.box3 img{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+.box3 p{
+    height: 150px;
+    overflow: hidden;
+    background: #fff;
+}
+footer{
+    height: 100px;
+    background: #ccc;
+}
